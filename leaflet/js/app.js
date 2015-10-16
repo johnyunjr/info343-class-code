@@ -18,7 +18,7 @@ $(function() {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        L.circleMarker(loc).addTo(map);
+        L.circleMarker(loc).addTo(map).bindPopup('Hello');
     }
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(pos) {
